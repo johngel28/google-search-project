@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+	text-align: center;
 }
 
 form {
@@ -16,6 +17,13 @@ input[type="image"] {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid #dfe1e5;
+    background-color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="image"]:hover {
+    cursor: pointer;
 }
 
 a {
@@ -24,6 +32,17 @@ a {
     color: #1a0dab;
 }
 
-a:hover {
-    text-decoration: underline;
+a.lucky {
+    background-color: #4285f4;
+    color: #fff;
+    border: 1px solid #3367d6;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a.lucky:hover {
+    background-color: #3367d6;
 }
